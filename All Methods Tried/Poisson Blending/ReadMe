@@ -1,1 +1,17 @@
+(1).
+car.png is the foreground image to be blended into street.jpg.
+blended_car_on_street.jpg is the output of the code.
+
+It should be noted that the output has some artifacts, I will be trying to remove them in the next iterations.
+
+Update:
+The issue has been fixed, and blended_car_on_street_fixed.jpg shows the fixed image.
+<img src="images/blended_car_on_street_fixed.jpg">
+
+(2).
+NORMAL_CLONE vs MIXED_CLONE blend modes.
+MIXED_CLONE tries to preserve stronger gradients in the foreground.
+Added results of both the blend methods to show the difference.
+Reason why NORMAL_CLONE looks better in our case? The background and foreground had similar gradient profiles, 
+so MIXED_CLONE tried to preserve both of them, which results in less natural transition. 
 
